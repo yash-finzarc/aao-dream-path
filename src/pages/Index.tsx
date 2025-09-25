@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import Footer from "@/components/Footer";
 import AuthModal from "@/components/AuthModal";
 import OnboardingFlow from "@/components/OnboardingFlow";
 import ChatInterface from "@/components/ChatInterface";
@@ -77,6 +78,7 @@ const Index = () => {
       <div className="min-h-screen bg-background">
         <Navbar onLoginClick={handleLoginClick} onSignupClick={handleSignupClick} />
         <HeroSection onChatStart={handleChatStart} />
+        <Footer />
         
         {/* Auth Modal */}
         <AuthModal
